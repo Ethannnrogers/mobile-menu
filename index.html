@@ -1,0 +1,498 @@
+
+<!DOCTYPE html>
+<html class="no-js" lang="zxx">
+
+<head>
+
+
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Earn points">
+
+
+    <title>Point Site | Redeem</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.png">
+
+    <link rel="stylesheet" href="css/theme.css">
+
+    
+
+
+
+    <!-- Montserrat USE: font-family: 'Montserrat', sans-serif;-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900"
+          rel="stylesheet">
+
+    <!-- HTML5 shiv and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <meta name="csrf-token" content="9a9qPJP10qEvzb5Ydioq4BpWoacTwHkj4x58IWjL">
+
+    <style>
+        .iti-flag {background-image: url("/iti/flags.png");}
+
+        @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+            .iti-flag {background-image: url("/iti/flags@2x.png");}
+        }
+    </style>
+
+</head>
+
+<body>
+<!--[if lt IE 8]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+
+
+
+<!--==================================*
+        Mobile Menu Section
+*====================================-->
+
+<div id="mobile-nav">
+    <div class="container" id="menu">
+        <div class="row">
+            <a href="#" class="col active-menu menu-item" id="home-menu">
+                <i class="fas fa-home menu-item-icon"></i><br>
+                Home
+            </a>
+            <a href="#" class="col menu-item" id="surveys-menu">
+                <i class="fas fa-poll-h menu-item-icon"></i><br>
+                Surveys
+            </a>
+            <a href="#" class="col menu-item" id="deals-menu">
+                <i class="fas fa-tags menu-item-icon"></i><br>
+                Deals
+            </a>
+            <a href="#" class="col menu-item" id="redeem-menu">
+                <i class="fas fa-gift menu-item-icon"></i><br>
+                Redeem
+            </a>
+        </div>
+    </div>
+</div>
+                        
+<!--==================================*
+        End Mobile Menu
+*====================================-->
+
+
+
+<!--=========================*
+         Page Container
+*===========================-->
+<div class="page-container">
+
+    <!--=========================*
+             Side Bar Menu
+    *===========================-->
+    <div class="sidebar-menu light-sidebar">
+        <div class="sidebar-header">
+            <!--=========================*
+                          Logo
+            *===========================-->
+            <div class="logo">
+                <!--<a href="index.html"><img src="/images/logo-dark.svg" alt="logo"></a>-->
+                Points<b>FTW</b>
+            </div>
+            <!--=========================*
+                        End Logo
+            *===========================-->
+        </div>
+
+        <div class="main-menu">
+    <div class="menu-inner" id="sidebar_menu">
+        <nav>
+            <ul class="metismenu" id="menu">
+                <li><a href="/home" aria-expanded="true"><i class="fa fa-home"></i><span>Home</span></a></li>
+                <li>
+                    <a href="/daily" id="daily" aria-expanded="true"><i class="fa fa-calendar-check-o"></i><span>Daily Check In
+                                                </a>
+                </li>
+                <li><a href="/surveys" id="surveys" aria-expanded="true"><i class="fa fa-file-text-o"></i><span>Surveys</span></a></li>
+                <li><a href="/offerwalls" aria-expanded="true"><i class="fa fa-align-justify"></i><span>Offerwalls</span></a></li>
+                <!--
+                <li><a href="/shopping" aria-expanded="true"><i class="fa fa-shopping-cart"></i><span>Shopping</span></a></li>
+                <li><a href="/coupons" aria-expanded="true"><i class="fa fa-scissors"></i><span>Coupons</span></a></li>
+                <li><a href="/contests" aria-expanded="true"><i class="fa fa-gift"></i><span>Contests</span></a></li>
+                -->
+                <li><a href="/referrals" aria-expanded="true"><i class="fa fa-user-plus"></i><span>Refer A Friend</span></a></li>
+                <li><a href="/redeem" id="redeem" aria-expanded="true"><i class="fa fa-credit-card"></i><span>Redeem Points</span></a></li>
+
+                                <hr>
+                <p class="h6" style="margin-left:25px;">Admin Section</p>
+                <li><a href="/admin/daily" aria-expanded="true"><i class="fa fa-calendar-check-o"></i><span>Daily Questions</span></a></li>
+                <li><a href="/admin/advertisers" aria-expanded="true"><i class="fa fa-user-plus"></i><span>Advertisers</span></a></li>
+                <li><a href="/admin/offers" aria-expanded="true"><i class="fa fa-file-text-o"></i><span>Offers</span></a></li>
+                    <li><a href="/admin/users" aria-expanded="true"><i class="fa fa-users"></i><span>Users</span></a></li>
+                    <li><a href="/admin/reports" aria-expanded="true"><i class="fa fa-bar-chart"></i><span>Reports</span></a></li>
+                            </ul>
+        </nav>
+    </div>
+</div>
+
+        
+    </div>
+    <!--=========================*
+           End Side Bar Menu
+    *===========================-->
+
+    <!--==================================*
+               Main Content Section
+    *====================================-->
+    <div class="main-content">
+
+        <!--==================================*
+                   Header Section
+        *====================================-->
+        <div class="header-area">
+            <div class="row align-items-center">
+                <div class="mobile-logo d_none_lg">
+                    Points<b>FTW</b>
+                </div>
+
+                <!--==================================*
+                         Navigation and Search
+                *====================================-->
+                <div class="col-md-6 d_none_sm d-flex align-items-center">
+                    <div class="nav-btn pull-left">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="search-box pull-left">
+                        <form action="/search">
+                            <i class="ti-search"></i>
+                            <input type="text" name="kw" placeholder="Search..." required>
+                        </form>
+                    </div>
+                </div>
+                <!--==================================*
+                         End Navigation and Search
+                *====================================-->
+
+                <!--==================================*
+                         Notification Section
+                *====================================-->
+                <div class="col-md-6 col-sm-12">
+                    <ul class="notification-area pull-right">
+
+                        <li>
+
+                            <span class="nav-btn pull-left d_none_lg">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </span>
+                        </li>
+
+                        <!--<li class="dropdown">
+                            <i class="ti-bell dropdown-toggle" data-toggle="dropdown"><span></span></i>
+                            <div class="dropdown-menu bell-notify-box notify-box">
+                                <span class="notify-title">You have 3 new notifications <a href="#">view all</a></span>
+                                <div class="nofity-list">
+                                    <a href="#" class="notify-item">
+                                        <div class="notify-thumb"><i class="ti-map-alt bg_blue"></i></div>
+                                        <div class="notify-text">
+                                            <h3>You added your Location</h3>
+                                            <span>Just Now</span>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="notify-item">
+                                        <div class="notify-thumb"><i class="ti-bolt-alt bg_warning"></i></div>
+                                        <div class="notify-text">
+                                            <h3>Your Subscription Expired</h3>
+                                            <span>30 Seconds ago</span>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="notify-item">
+                                        <div class="notify-thumb"><i class="ti-heart bg_danger"></i></div>
+                                        <div class="notify-text">
+                                            <h3>Some special like you</h3>
+                                            <span>Just Now</span>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="notify-item">
+                                        <div class="notify-thumb"><i class="ti-comments bg_info"></i></div>
+                                        <div class="notify-text">
+                                            <h3>New Commetns On Post</h3>
+                                            <span>30 Seconds ago</span>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="notify-item">
+                                        <div class="notify-thumb"><i class="ti-settings bg_secondary"></i></div>
+                                        <div class="notify-text">
+                                            <h3>You changed your Settings</h3>
+                                            <span>Just Now</span>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="notify-item">
+                                        <div class="notify-thumb"><i class="ti-image bg_success"></i></div>
+                                        <div class="notify-text">
+                                            <h3>Image Uploaded Successfully</h3>
+                                            <span>Just Now</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>-->
+
+                        <li class="user-dropdown" id="points">
+                            <div class="dropdown">
+                                <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <!--<span class="d_none_sm">Tom Voitik <i class="ti-angle-down"></i></span>-->
+                                    <span class="d_none_sm" style="font-size:18px;font-weight:bold;">Points: 2 <i class="ti-angle-down"></i></span>
+                                    <img src="https://i.imgur.com/EoaqKTC.png" style="height:60px;" alt="" class="img-fluid">
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" >
+                                    <a class="dropdown-item" href="#"><i class="ti-user"></i> Profile</a>
+                                    <span role="separator" class="divider"></span>
+                                    <a class="dropdown-item" href="/logout"><i class="ti-power-off"></i>Logout</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <!--==================================*
+                         End Notification Section
+                *====================================-->
+
+
+
+                
+
+            </div>
+        </div>
+        <!--==================================*
+                   End Header Section
+        *====================================-->
+
+        <!--==================================*
+                   Main Section
+        *====================================-->
+        <div class="main-content-inner">
+            
+    <div class="row">
+        <div class="col-md-4 mb-4">
+            <div class="card card-icon text-center">
+                <div class="card-body">
+                    <i class="ti-server"></i>
+                    <p>Total Points</p>
+                    <span>2</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <div class="card card-icon text-center">
+                <div class="card-body">
+                    <i class="ti-server"></i>
+                    <p>Approved Points</p>
+                    <span>0</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <div class="card card-icon text-center">
+                <div class="card-body">
+                    <i class="ti-server"></i>
+                    <p>Pending Points</p>
+                    <span>2</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-3 mb-4">
+            <div class="card_with_image">
+                <div class="blog_card_image">
+                    <a href="javascript:no();">
+                        <img src="https://i.imgur.com/JI2vavA.png" alt="" class="img-responsive ">
+                    </a>
+                </div>
+                <div class="rt_post_data">
+                    <div class="blog_card_description">
+                        <div class="blog_data">
+                            <h3>$3 Amazon Gift Card</h3>
+                            <p>Price: 300 Points</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3 mb-4">
+            <div class="card_with_image">
+                <div class="blog_card_image">
+                    <a href="javascript:no();">
+                        <img src="https://i.imgur.com/JI2vavA.png" alt="" class="img-responsive ">
+                    </a>
+                </div>
+                <div class="rt_post_data">
+                    <div class="blog_card_description">
+                        <div class="blog_data">
+                            <h3>$5 Amazon Gift Card</h3>
+                            <p>Price: 500 Points</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3 mb-4">
+            <div class="card_with_image">
+                <div class="blog_card_image">
+                    <a href="javascript:no();">
+                        <img src="https://i.imgur.com/JI2vavA.png" alt="" class="img-responsive ">
+                    </a>
+                </div>
+                <div class="rt_post_data">
+                    <div class="blog_card_description">
+                        <div class="blog_data">
+                            <h3>$10 Amazon Gift Card</h3>
+                            <p>Price: 1000 Points</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3 mb-4">
+            <div class="card_with_image">
+                <div class="blog_card_image">
+                    <a href="javascript:no();">
+                        <img src="https://i.imgur.com/JI2vavA.png" alt="" class="img-responsive ">
+                    </a>
+                </div>
+                <div class="rt_post_data">
+                    <div class="blog_card_description">
+                        <div class="blog_data">
+                            <h3>$25 Amazon Gift Card</h3>
+                            <p>Price: 25000 Points</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+        </div>
+        <!--==================================*
+                   End Main Section
+        *====================================-->
+    </div>
+    <!--=================================*
+           End Main Content Section
+    *===================================-->
+
+    <footer>
+        <div class="footer-area">
+            <p>&copy; Copyright 2019. All right reserved. |  <a href="#" id="startTourBtn">Help</a> | <a href="/terms">Terms</a> | <a href="/privacy">Privacy</a></p>
+        </div>
+    </footer>
+
+
+</div>
+<!--=========================*
+        End Page Container
+*===========================-->
+
+<script src="js/theme.js"></script>
+<script>
+    var path = window.location.pathname;
+    path = path.replace(/\/$/, "");
+    path = decodeURIComponent(path);
+
+    $(".metismenu a").each(function () {
+        var href = $(this).attr('href');
+        if (path.substring(0, href.length) === href) {
+            $(this).closest('li').addClass('active');
+        }
+    });
+</script>
+
+
+<script>
+    function no(){
+        swal({
+            type: "error",
+            title: "Not Enough Points",
+            text: "You do not have enough points to redeem this reward.",
+            buttonsStyling: !1,
+            confirmButtonClass: "btn btn-success"
+        })
+    }
+</script>
+<audio src="https://cdn.ogads.com/assets/sounds/leadsounds/smw_coin.mp3" type="audio/mpeg" id="ding"></audio>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-54541140-7"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-54541140-7');
+</script>
+
+<script>
+    $(document).ready(function() {
+        tour = {
+            id: "hello-hopscotch",
+            steps: [
+                {
+                    title: "Points Total",
+                    content: "This is where you can see how many points you have.  Points can be redeemed for giftcards later.",
+                    target: "points",
+                    placement: "left"
+                },
+                {
+                    title: "Daily Question",
+                    content: "Visit every day and answer the daily question to earn 1 point.",
+                    target: "daily",
+                    placement: "right"
+                },
+
+                {
+                    title: "Earn Points",
+                    content: "Fill out surveys to earn points",
+                    target: "surveys",
+                    placement: "right"
+                },
+
+                {
+                    title: "Gift Cards",
+                    content: "Once you have enough points you can redeem your points for giftcards!",
+                    target: "redeem",
+                    placement: "right"
+                },
+
+            ]
+        }
+
+        
+    });
+    $("#startTourBtn").on("click", function(t) {
+        hopscotch.startTour(tour)
+    });
+
+    
+</script>
+
+
+</body>
+</html>
